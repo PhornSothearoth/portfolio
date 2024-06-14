@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+.frontEnd {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color:#282c34;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 10px;
+  color:#282c34;
+}
+.topline::after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom: 5px;
+  background-color:#7e0eed;
+}
+.multiText, .largTxt {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.multiText {
+  color: var(--accent-color);
+}
+.cols0 {
+  z-index: 5;
+}
+.cols0 > p {
+  font-size: 1.3rem;
+  color: var(--secendary-color);
+}
+.btns {
+  padding: 1rem 3rem;
+  display: inline;
+  background-color: #7f00ff;
+  line-height: 5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--secendary-color);
+  cursor: pointer;
+}
+.btns:hover {
+  background-color: #7e0eed;
+}
+.btns > a {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+.owner-img {
+  width: 600px;
+}
+.owner-img > img {
+  width: 100%;
+  animation: animateUser 1.5s infinite alternate-reverse;
+}
+@keyframes animateUser{
+  from{
+      transform: translateY(15px);
+  }
+  to{
+      transform: translateX(-15px);
+  }
+}
+.violet {
+  color:#7e0eed;
+}
