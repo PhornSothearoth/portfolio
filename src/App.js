@@ -5,7 +5,7 @@ import AboutMe from './component/AboutMe';
 import Home from './Home';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './pages/NotFound';
-import Card from './component/Card';
+import ContactMe from './component/ContactMe';
 
 function App() {
   
@@ -16,7 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<AboutMe/>}/>
-          
+          <Route path='/contact' element={<ContactMe/>}/>
+
           <Route path='*' element={<NotFound/>}/>
         </Routes>
       <MyFooter/>

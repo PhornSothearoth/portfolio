@@ -1,9 +1,13 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 
 export default function Card({imagesCard, nameCard} ){
+  useEffect (() => {
+    Aos.init({duration : 2000})
+  },[])
   return (
     <>
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up">
         <a href="#">
           <img
             className="rounded-t-lg"

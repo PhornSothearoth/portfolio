@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import im1 from '../utils/logo.png';
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 
 
 export default function MyNav() {
+    useEffect (() => {
+      Aos.init({duration:1000,easing:"linear"})
+    },[])
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900" data-aos="fade-down">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href=""
