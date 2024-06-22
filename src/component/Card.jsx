@@ -7,7 +7,7 @@ export default function Card({imagesCard, nameCard} ){
   },[])
   return (
     <>
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up">
+      <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up">
         <a href="#">
           <img
             className="rounded-t-lg"
@@ -17,7 +17,7 @@ export default function Card({imagesCard, nameCard} ){
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white text-gray-900 ">
               {nameCard}
             </h5>
           </a>

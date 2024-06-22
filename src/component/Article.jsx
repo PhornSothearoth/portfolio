@@ -29,25 +29,25 @@ function Article() {
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div
             className="mr-auto place-self-center lg:col-span-7 "
-            data-aos="fade-right"
+            data-aos="zoom-out-right"
             data-aos-easing="ease-in-out"
           >
-            <span className="topline">Hi Guys</span>
-            <h1 className="largTxt">
+            <span className="topline dark:text-gray-400">Hi Guys</span>
+            <h1 className="largTxt dark:text-white">
               I'm {""} <span className="violet">{typeEffect}</span>
               <span>
                 <Cursor cursoStyle="|" />
               </span>
             </h1>
-            <span className="frontEnd">Font-end Developer</span>
-            <p className="pt-3 text-gray-500">
+            <span className="frontEnd dark:text-gray-400">Font-end Developer</span>
+            <p className="pt-3 text-gray-500 dark:text-gray-400">
               Hello I'm Roth. I'm 22 years old and I'm from Preyveng Province.I
               would like to inform you that I am study Computer Science at Royal
               university Of Phnom Penh (RUPP) and successfully completed Front
               End Developer skill from Center Of Science and Technology Advanced
               Development – CSTAD .
             </p>
-            <div className=" text-2xl pt-5">
+            <div className=" text-2xl pt-5 dark:text-purple-700">
               <a
                 href="https://web.facebook.com/phorn.sothearoth"
                 target="_blank"
@@ -85,7 +85,7 @@ function Article() {
               </a>
             </div>
           </div>
-          <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="fade-left">
+          <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="zoom-in-left">
             <Lottie animationData={coder} loop={true} />;
           </div>
         </div>

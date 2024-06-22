@@ -14,20 +14,20 @@ export default function ContactMe() {
   }, []);
   return (
     <>
-      <section className="bg-white dark:bg-gray-900" data-aos="fade-up">
-        <h1 className="text-4xl font-extrabold uppercase text-center">
+      <section className="bg-white dark:bg-gray-900">
+        <h1 className="text-4xl font-extrabold uppercase text-center dark:text-white">
           Contact <span className="violet">Me</span>
         </h1>
         <section>
           <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 gap-4">
-            <div class="mr-auto place-self-center lg:col-span-7">
+            <div class="mr-auto place-self-center lg:col-span-7" data-aos="zoom-out-right">
               <h1 class="max-w-2xl mb-4 text-4xl  font-extrabold tracking-tight leading-none  dark:text-white">
                 Need Help? Don't Forget Contact with me
               </h1>
-              <div className="pt-5">
+              <div className="pt-5 ">
                 <a>
-                  <FontAwesomeIcon className="text-xl" icon={faLocationDot} />{" "}
-                  <span>
+                  <FontAwesomeIcon className="text-xl dark:text-purple-700" icon={faLocationDot} />{" "}
+                  <span className="dark:text-gray-400">
                     {" "}
                     #171 Vengsreng st, Domnak Thom Village, Sangkat Stueng Mean
                     Chey, Khan Mean Chey, Phnom Penh City.
@@ -35,18 +35,18 @@ export default function ContactMe() {
                 </a>{" "}
                 <br></br>
                 <a>
-                  <FontAwesomeIcon className="text-xl" icon={faPhone} />{" "}
-                  <span>+855 964 153 999</span>
+                  <FontAwesomeIcon className="text-xl dark:text-purple-700" icon={faPhone} />{" "}
+                  <span className="dark:text-gray-400">+855 964 153 999</span>
                 </a>{" "}
                 <br></br>
                 <a>
-                  <FontAwesomeIcon className="text-xl" icon={faEnvelopeOpen} />{" "}
-                  <span>sothearothphor999@gmail.com</span>
+                  <FontAwesomeIcon className="text-xl dark:text-purple-700" icon={faEnvelopeOpen} />{" "}
+                  <span className="dark:text-gray-400">sothearothphor999@gmail.com</span>
                 </a>{" "}
                 <br></br>
                 <a>
-                  <FontAwesomeIcon className="text-xl" icon={faTelegram} />{" "}
-                  <span>@Chhaiyaroth</span>
+                  <FontAwesomeIcon className="text-xl dark:text-purple-700" icon={faTelegram} />{" "}
+                  <span className="dark:text-gray-400">@Chhaiyaroth</span>
                 </a>
               </div>
               <div className="pt-5">
@@ -78,7 +78,7 @@ export default function ContactMe() {
                 </Link>
               </div>
             </div>
-            <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+            <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="zoom-in-left">
               <Lottie animationData={contact} loop={true} />
             </div>
           </div>

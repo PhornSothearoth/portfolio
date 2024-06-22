@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import image4x6 from "../utils/4x6.jpg"
+import profileImages from "../utils/profile.jpg"
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -10,21 +10,22 @@ export default function AboutMe() {
   return (
     <>
       <section className="bg-white dark:bg-gray-900"> 
-        <h1 className="text-4xl uppercase font-extrabold text-center">
+        <h1 className="text-4xl uppercase font-extrabold text-center dark:text-white">
           About <span className="violet">Me</span>
         </h1>
-        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6" data-aos="fade-up" data-aos-easing="ease-in-out">
+        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
-            className=" w-full dark:hidden"
-            src={image4x6}
-            alt="dashboard image"
+          data-aos="zoom-out-right" 
+            className=" w-full rounded-full"
+            src={profileImages}
+            alt="profile image"
             
           />
-          <div className="mt-4 md:mt-0" >
+          <div className="mt-4 md:mt-0" data-aos="zoom-in-left">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Phorn Sothearoth
             </h2>
-            <p className="mb-6  text-gray-500 md:text-lg dark:text-gray-400">
+            <p className="mb-6  text-gray-400 md:text-lg dark:text-gray-400">
               Hi guys my name's Phorn Sothearoth. I'm 22 years old and from
               Preyveng Province. I would like to inform you that I am study
               Computer Science at Royal university Of Phnom Penh (RUPP) and

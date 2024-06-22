@@ -8,9 +8,9 @@ export default function AboutMe() {
         <h1 className="text-4xl font-extrabold text-center">
           About <span className="violet">Me</span>
         </h1>
-        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div className="gap-8 items-center  py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
-            className=" w-full dark:hidden"
+            className=" w-full "
             src={image4x6}
             alt="dashboard image"
           />

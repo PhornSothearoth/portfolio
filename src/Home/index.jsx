@@ -11,6 +11,9 @@ import resterantProject from "../utils/resterant.png";
 import coffeeProject from "../utils/coffee.png";
 import medicareProject from "../utils/medicare.png";
 import watchProject from "../utils/watch.png";
+import FrontEnd from "../component/FrontEnd";
+import WebDesign from "../component/WebDesign";
+import UxUiDesign from "../component/UxUiDesign";
 
 function Home() {
   
@@ -103,22 +106,28 @@ function Home() {
   ];
   return (
     <>
-      <main>
+      <main className="dark:bg-gray-900">
         <Article />
         <AboutMe />
-        <h1 className="text-4xl font-extrabold text-center pb-10">
+        <h1 className="text-4xl font-extrabold text-center pb-10 dark:text-white">
           MY <span className="violet">SKILL</span>
         </h1>
-        <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16   ">
+        {/* <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16   ">
           {skill.map((skill) => (
             <Card imagesCard={skill.images} nameCard={skill.title} />
           ))}
+        </section> */}
+
+        <section className="grid md:grid-cols-2 xs:gap-5 lg:grid-cols-3 gap-36 gap-y-8  max-w-screen-xl mx-auto p-4 pb-16 ">
+          <FrontEnd/>
+          <WebDesign/>
+          <UxUiDesign/>
         </section>
        
-        <h1 className="text-4xl font-extrabold uppercase text-center pb-10">
+        <h1 className="text-4xl font-extrabold uppercase text-center pb-10 dark:text-white">
           MY <span className="violet">Project</span>
         </h1>
-        <section className="grid grid-cols-2 md:grid upp-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16   ">
+        <section className="grid grid-cols-2 md:grid upp-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16">
           {demoProject.map((demoProject) => (
             <MyProject
               imageProject={demoProject.imageProjects[0]}
