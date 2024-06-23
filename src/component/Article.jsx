@@ -30,7 +30,6 @@ function Article() {
           <div
             className="mr-auto place-self-center lg:col-span-7 "
             data-aos="zoom-out-right"
-            data-aos-easing="ease-in-out"
           >
             <span className="topline dark:text-gray-400">Hi Guys</span>
             <h1 className="largTxt dark:text-white">

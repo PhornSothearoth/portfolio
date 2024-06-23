@@ -4,7 +4,7 @@ import uxuiDesign from "../lotties/UXUI.json"
 
 export default function UxUiDesign() {
   return (
-    <div className="max-w-sm mx-auto px-5 py-10 bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-right">
+    <div className="max-w-sm mx-auto px-5 py-10 bg-gray-100 border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-right">
         <div>
             <Lottie animationData={uxuiDesign} loop={true} />
         </div>

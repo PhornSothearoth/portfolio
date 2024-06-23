@@ -9,7 +9,7 @@ export default function AboutMe() {
   }, []);
   return (
     <>
-      <section className="bg-white dark:bg-gray-900"> 
+      <section className="bg-white dark:bg-gray-900 pt-4"> 
         <h1 className="text-4xl uppercase font-extrabold text-center dark:text-white">
           About <span className="violet">Me</span>
         </h1>

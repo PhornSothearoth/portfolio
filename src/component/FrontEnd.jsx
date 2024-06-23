@@ -4,7 +4,7 @@ import frontEnd from "../lotties/frontEnd.json"
 
 export default function FrontEnd() {
   return (
-    <div className="max-w-sm  mx-auto bg-white border border-gray-200 px-5 py-10 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left">
+    <div className="max-w-sm  mx-auto bg-gray-100 border border-gray-200 px-5 py-10 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left">
         <div>
             <Lottie animationData={frontEnd} loop={true} />
         </div>

@@ -1,8 +1,4 @@
-import AboutMe from "../component/AboutMe";
 import Article from "../component/Article";
-import Card from "../component/Card";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import ContactMe from "../component/ContactMe";
 import MyProject from "../component/MyProject";
 import cenimaProject from "../utils/cinemaProject.png";
@@ -14,6 +10,8 @@ import watchProject from "../utils/watch.png";
 import FrontEnd from "../component/FrontEnd";
 import WebDesign from "../component/WebDesign";
 import UxUiDesign from "../component/UxUiDesign";
+import AboutMePages from "../pages/AboutMePages";
+import AboutMe from "../component/AboutMe";
 
 function Home() {
   
@@ -108,7 +106,7 @@ function Home() {
     <>
       <main className="dark:bg-gray-900">
         <Article />
-        <AboutMe />
+        <AboutMe/>
         <h1 className="text-4xl font-extrabold text-center pb-10 dark:text-white">
           MY <span className="violet">SKILL</span>
         </h1>

@@ -4,7 +4,7 @@ import webDesign from "../lotties/webDesign.json"
 
 export default function WebDesign() {
   return (
-    <div className="max-w-sm mx-auto px-5 py-10  bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left">
+    <div className="max-w-sm mx-auto px-5 py-10  bg-gray-100 border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left">
         <div>
             <Lottie animationData={webDesign} loop={true} />
         </div>

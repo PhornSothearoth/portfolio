@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import ContactMe from './component/ContactMe';
 import { useEffect } from 'react';
+import AboutMePages from './pages/AboutMePages';
 
 function App() {
   
@@ -27,7 +28,7 @@ function App() {
       <MyNav/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<AboutMe/>}/>
+          <Route path='/about' element={<AboutMePages/>}/>
           <Route path='/contact' element={<ContactMe/>}/>
 
           <Route path='*' element={<NotFound/>}/>
