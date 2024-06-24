@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import ContactMe from './component/ContactMe';
 import { useEffect } from 'react';
 import AboutMePages from './pages/AboutMePages';
+import SkillPages from './pages/SkillPages';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<AboutMePages/>}/>
+          <Route path='/skill' element={<SkillPages/>}/>
           <Route path='/contact' element={<ContactMe/>}/>
 
           <Route path='*' element={<NotFound/>}/>

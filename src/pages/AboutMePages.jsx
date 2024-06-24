@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import profileImages from "../utils/profile.jpg";
 import Aos from "aos";
 import { Link } from "react-router-dom";
+import myGoal from '../lotties/myGoal.json'
+import Lottie from "lottie-react";
 
 export default function AboutMePages() {
   useEffect(() => {
@@ -74,34 +76,26 @@ export default function AboutMePages() {
             </Link>
           </div>
         </div>
-        {/* <section>
-        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <section>
+        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div
             className="mr-auto place-self-center lg:col-span-7 "
             data-aos="zoom-out-right"
           >
-            <span className="topline dark:text-gray-400">Hi Guys</span>
-            <h1 className="largTxt dark:text-white">
-              I'm {""} <span className="violet">{typeEffect}</span>
-              <span>
-                <Cursor cursoStyle="|" />
-              </span>
-            </h1>
-            <span className="frontEnd dark:text-gray-400">Font-end Developer</span>
-            <p className="pt-3 text-gray-500 dark:text-gray-400">
-              Hello I'm Roth. I'm 22 years old and I'm from Preyveng Province.I
-              would like to inform you that I am study Computer Science at Royal
-              university Of Phnom Penh (RUPP) and successfully completed Front
-              End Developer skill from Center Of Science and Technology Advanced
-              Development – CSTAD .
+           
+              <span className="text-2xl font-bold  text-purple-700 ">
+                My Goal
+              </span>{" "}<br/><br/>
+            <p className="mb-6  text-gray-400 md:text-lg dark:text-gray-400">
+              My Gaol! I would like to share my knownledge and experience to a lot of junior who want to become Programmer.
+               And also want to spread the skills I am learning, information technology, to rural children so that our country can be more technologically advanced.
             </p>
-            
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="zoom-in-left">
-            <Lottie animationData={coder} loop={true} />;
+            <Lottie animationData={myGoal} loop={true} />;
           </div>
         </div>
-        </section> */}
+        </section>
       </section>
     </>
   );
