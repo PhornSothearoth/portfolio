@@ -10,11 +10,10 @@ import watchProject from "../utils/watch.png";
 import FrontEnd from "../component/FrontEnd";
 import WebDesign from "../component/WebDesign";
 import UxUiDesign from "../component/UxUiDesign";
-import AboutMePages from "../pages/AboutMePages";
 import AboutMe from "../component/AboutMe";
 
 function Home() {
-  
+
  
   const demoProject = [
     {

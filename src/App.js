@@ -1,17 +1,16 @@
 import './App.css';
 import MyNav from './component/MyNav';
 import MyFooter from './component/MyFooter';
-import AboutMe from './component/AboutMe';
 import Home from './Home';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './pages/NotFound';
-import ContactMe from './component/ContactMe';
 import { useEffect } from 'react';
 import AboutMePages from './pages/AboutMePages';
 import SkillPages from './pages/SkillPages';
+import ContactPages from './pages/ContactPages';
+import { initFlowbite } from 'flowbite';
 
 function App() {
-  
     useEffect (() => {
       if (!localStorage.getItem('color-theme') ){
         localStorage.setItem('color-theme', 'light')
@@ -21,7 +20,10 @@ function App() {
       }else {
         document.documentElement.classList.remove('dark')
       }
+      initFlowbite();
     },[]) 
+
+    
 
   return (
    <>
@@ -31,7 +33,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<AboutMePages/>}/>
           <Route path='/skill' element={<SkillPages/>}/>
-          <Route path='/contact' element={<ContactMe/>}/>
+          <Route path='/contact' element={<ContactPages/>}/>
 
           <Route path='*' element={<NotFound/>}/>
         </Routes>
