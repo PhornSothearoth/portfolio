@@ -23,6 +23,7 @@ function Article() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <>
       <section className="bg-white dark:bg-gray-900 ">
