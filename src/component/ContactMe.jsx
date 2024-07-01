@@ -14,12 +14,12 @@ export default function ContactMe() {
   }, []);
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 left-0 ">
         <h1 className="text-4xl font-extrabold uppercase text-center dark:text-white">
           Contact <span className="violet">Me</span>
         </h1>
         <section>
-          <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 gap-4">
+          <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7" data-aos="zoom-out-right">
               <h1 class="max-w-2xl mb-4 text-4xl  font-extrabold tracking-tight leading-none  dark:text-white">
                 Need Help? Don't Forget Contact with me

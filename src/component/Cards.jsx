@@ -6,7 +6,7 @@ export default function Card({imagesCard, nameCard} ){
     Aos.init({duration : 2000})
   },[])
   return (
-    <>
+    <section className="duration-500 hover:scale-105 hover:shadow-xl">
       <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700" data-aos="fade-up">
         <a href="#">
           <img
@@ -27,6 +27,6 @@ export default function Card({imagesCard, nameCard} ){
           </p> */}
         </div>
       </div>
-    </>
+    </section>
   );
 }

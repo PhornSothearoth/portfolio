@@ -31,14 +31,9 @@ export default function SkillPages() {
       title: "React JS",
       images: "https://eduport.webestica.com/assets/images/courses/4by3/07.jpg",
     },
+    
     {
       id: 6,
-      title: "C++",
-      images:
-        "https://media.sketchfab.com/models/1b277fc32bbc451fa6f40e298996ba91/thumbnails/1c9c06b1fa3c4aaaa94a70bc7bfc3c7e/d369fbc48d5b479bb657791e4026ca34.jpeg",
-    },
-    {
-      id: 7,
       title: "JAVA",
       images:
         "https://i.pinimg.com/564x/50/23/24/5023241ec4e865874d1bd61a991e38ce.jpg",
@@ -62,7 +57,7 @@ export default function SkillPages() {
         </p>
       </article>
 
-      <section className="grid md:grid-cols-2 xs:gap-5 lg:grid-cols-3 gap-36 gap-y-8  max-w-screen-xl mx-auto p-4 pb-16 ">
+      <section className="grid md:grid-cols-2 xs:gap-5 lg:grid-cols-3 gap-36 gap-y-8 pt-20  max-w-screen-xl mx-auto p-4 pb-16 ">
         <FrontEnd />
         <WebDesign />
         <UxUiDesign />

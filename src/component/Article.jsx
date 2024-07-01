@@ -85,7 +85,7 @@ function Article() {
             </div>
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="zoom-in-left">
-            <Lottie animationData={coder} loop={true} />;
+            <Lottie animationData={coder} loop={true} />
           </div>
         </div>
       </section>

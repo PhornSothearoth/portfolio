@@ -27,7 +27,7 @@ function Home() {
       id: 2,
       titleProjects: "Bussiness Project",
       imageProjects: [bussinessProject],
-      detailProjects: "This project build with JavaScript",
+      detailProjects: "This project build with  JavaScript",
       linkToPrjects: "https://bussinessbychhaiyaroth.netlify.app/",
     },
     {

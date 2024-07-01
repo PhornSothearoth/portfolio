@@ -12,7 +12,7 @@ export default function MyProject({
     Aos.init({duration:1000, easing:"ease-in-out"})
   },[])
   return (
-    <>
+    <section className="duration-500">
       <div className="max-w-sm mx-auto bg-gray-100 border border-gray-200 rounded-lg shadow hover:border-gray-300  dark:bg-gray-800 dark:border-gray-700 " data-aos="fade-up">
         <Link to={linkToProject} target="_blank">
           <div>
@@ -28,6 +28,6 @@ export default function MyProject({
           </div>
         </Link>
       </div>
-    </>
+    </section>
   );
 }
