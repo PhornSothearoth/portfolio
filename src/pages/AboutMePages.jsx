@@ -4,14 +4,20 @@ import Aos from "aos";
 import { Link } from "react-router-dom";
 import myGoal from '../lotties/myGoal.json'
 import Lottie from "lottie-react";
+import TitleShowerLoading from "../component/LoadingFolder/TitleShowerLoading";
+import AboutPagesLoading from "../component/LoadingFolder/AboutPagesLoading";
+import ArticleLoadingImgRight from "../component/LoadingFolder/ArticleLoadingImgRight";
 
 export default function AboutMePages() {
+  const [loading, setLoading] = useState([true])
   useEffect(() => {
     Aos.init({ duration: 2000 });
+    setLoading(false);
   }, []);
   return (
     <>
       <section className="bg-white dark:bg-gray-900">
+        {loading ? <TitleShowerLoading/> :
         <article className="w-full myGragientColor p-4 pt-72  pb-80 ">
           <h1
             class="mb-4 text-2xl text-center font-extrabold tracking-tight text-white md:text-3xl lg:text-4xl dark:text-white"
@@ -29,7 +35,8 @@ export default function AboutMePages() {
             Information Technology (IT) and every day i gain skill{" "}
             <span className=" italic font-bold">"Front-End Developer"</span> .
           </p>
-        </article>
+        </article>}
+        {loading ? <AboutPagesLoading/>  :
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
             data-aos="zoom-out-right"
@@ -58,11 +65,11 @@ export default function AboutMePages() {
             <Link
               to="https://drive.google.com/file/d/1Ho2EFejz_n0wrbz7mqZQTt6jvEml4sCD/view?usp=drive_link"
               target="_blank"
-              class="inline-flex  items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-purple-700 hover:bg-purple-800  dark:focus:ring-primary-900"
+              className="inline-flex  items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-purple-700 hover:bg-purple-800  dark:focus:ring-primary-900"
             >
               View CV
               <svg
-                class="w-5 h-5 ml-2 -mr-1"
+                className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +82,8 @@ export default function AboutMePages() {
               </svg>
             </Link>
           </div>
-        </div>
+        </div>}
+        {loading ? <ArticleLoadingImgRight/> :
         <section>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div
@@ -95,7 +103,7 @@ export default function AboutMePages() {
             <Lottie animationData={myGoal} loop={true} />;
           </div>
         </div>
-        </section>
+        </section>}
       </section>
     </>
   );

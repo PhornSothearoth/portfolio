@@ -1,6 +1,6 @@
 import React from "react";
 import im1 from "../utils/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function MyFooter() {
   return (
@@ -9,7 +9,7 @@ export default function MyFooter() {
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link
-              to="#"
+              to="/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
               <img src={im1} className="h-8" alt="Roth-logo" />

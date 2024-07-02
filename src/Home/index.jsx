@@ -11,10 +11,15 @@ import FrontEnd from "../component/FrontEnd";
 import WebDesign from "../component/WebDesign";
 import UxUiDesign from "../component/UxUiDesign";
 import AboutMe from "../component/AboutMe";
+import { useEffect, useState } from "react";
+import ArticleLoadingImgRight from "../component/LoadingFolder/ArticleLoadingImgRight";
+import LoadingImagesLeft from "../component/LoadingFolder/LoadingImagesLeft";
+import LoadingCards from "../component/LoadingFolder/LoadingCards";
+import TilteLoading from "../component/LoadingFolder/TilteLoading";
+import FooterLoading from "../component/LoadingFolder/FooterLoading";
 
 function Home() {
-
- 
+  const [loading, setLoading] = useState([true]);
   const demoProject = [
     {
       id: 1,
@@ -63,42 +68,74 @@ function Home() {
       linkToPrjects: "https://r-techno.netlify.app/",
     },
   ];
+  useEffect(() => {
+    setLoading(false);
+  }, []);
   return (
-    <>
-      <main className="dark:bg-gray-900">
-        <Article />
-        <AboutMe/>
-        <h1 className="text-4xl font-extrabold text-center pb-10 dark:text-white">
-          MY <span className="violet">SKILL</span>
-        </h1>
-        {/* <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16   ">
-          {skill.map((skill) => (
-            <Card imagesCard={skill.images} nameCard={skill.title} />
-          ))}
-        </section> */}
-
-        <section className="grid md:grid-cols-2 xs:gap-5 lg:grid-cols-3 gap-36 gap-y-8  max-w-screen-xl mx-auto p-4 pb-16 ">
-          <FrontEnd/>
-          <WebDesign/>
-          <UxUiDesign/>
-        </section>
-       
-        <h1 className="text-4xl font-extrabold uppercase text-center pb-10 dark:text-white">
-          MY <span className="violet">Project</span>
-        </h1>
-        <section className="grid grid-cols-2 md:grid upp-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16">
-          {demoProject.map((demoProject) => (
-            <MyProject
-              imageProject={demoProject.imageProjects[0]}
-              titleProject={demoProject.titleProjects}
-              linkToProject={demoProject.linkToPrjects}
-              detailProject={demoProject.detailProjects}
-            />
-          ))}
-        </section>
-        <ContactMe />
-      </main>
-    </>
+     <>
+       <main className="dark:bg-gray-900">
+         {loading ? <ArticleLoadingImgRight /> : <Article />}
+         {loading ? (
+           <TilteLoading />
+         ) : (
+           <h1 className="text-4xl font-extrabold uppercase text-center pb-10 dark:text-white">
+             About <span className="violet">Me</span>
+           </h1>
+         )}
+         {loading ? <LoadingImagesLeft /> : <AboutMe />}
+         {loading ? (
+           <TilteLoading />
+         ) : (
+           <h1 className="text-4xl font-extrabold text-center pb-10 dark:text-white">
+             MY <span className="violet">SKILL</span>
+           </h1>
+         )}
+         {/* <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16   ">
+           {skill.map((skill) => (
+             <Card imagesCard={skill.images} nameCard={skill.title} />
+           ))}
+         </section> */}
+ 
+         {loading ? (
+           <LoadingCards />
+         ) : (
+           <section className="grid md:grid-cols-2 xs:gap-5 lg:grid-cols-3 gap-36 gap-y-8  max-w-screen-xl mx-auto p-4 pb-16 ">
+             <FrontEnd />
+             <WebDesign />
+             <UxUiDesign />
+           </section>
+         )}
+         {loading ? (
+           <TilteLoading />
+         ) : (
+           <h1 className="text-4xl font-extrabold uppercase text-center pb-10 dark:text-white">
+             MY <span className="violet">Project</span>
+           </h1>
+         )}
+         {loading ? (
+           <LoadingCards />
+         ) : (
+           <section className="grid grid-cols-2 md:grid upp-cols-3 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto p-4 pb-16">
+             {demoProject.map((demoProject) => (
+               <MyProject
+                 imageProject={demoProject.imageProjects[0]}
+                 titleProject={demoProject.titleProjects}
+                 linkToProject={demoProject.linkToPrjects}
+                 detailProject={demoProject.detailProjects}
+               />
+             ))}
+           </section>
+         )}
+         {loading ? (
+           <TilteLoading />
+         ) : (
+           <h1 className="text-4xl font-extrabold uppercase text-center pb-10 dark:text-white">
+             Contact <span className="violet">Me</span>
+           </h1>
+         )}
+         {loading ? <LoadingCards /> : <ContactMe />}
+       </main>
+     </>
   );
 }
 export default Home;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import im1 from "../utils/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import secureLocalStorage from "react-secure-storage";
 
 export default function MyNav() {
@@ -120,37 +120,49 @@ export default function MyNav() {
           >
             <ul className="font-medium text-sm uppercase flex  flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link
+                <NavLink
                   to="/"
-                  className="block py-2 px-3 text-white bg-purple-700 rounded md:bg-transparent md:text-purple-700 md:p-0 dark:text-white md:dark:text-purple-700"
+                  className={({isActive})=>
+                   isActive ?  "block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-700"
+                    : "block py-2 pl-3 pr-4 text-white bg-purple-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-gray-50"
+                  }
                   aria-current="page"
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/about"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-white md:dark:hover:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className={({isActive})=>
+                  isActive ?"block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-700"
+                    : "block py-2 pl-3 pr-4 text-white bg-purple-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-gray-50"
+                  }
                 >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/skill"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-white md:dark:hover:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className={({isActive})=>
+                    isActive ?"block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-700"
+                      : "block py-2 pl-3 pr-4 text-white bg-purple-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-gray-50"
+                    }
                 >
                   skill
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/contact"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-white md:dark:hover:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className={({isActive})=>
+                    isActive ?"block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple-700"
+                      : "block py-2 pl-3 pr-4 text-white bg-purple-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-gray-50"
+                    }
                 >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
