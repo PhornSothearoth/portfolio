@@ -100,7 +100,7 @@ export default function AboutMePages() {
             </p>
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex" data-aos="zoom-in-left">
-            <Lottie animationData={myGoal} loop={true} />;
+            <Lottie animationData={myGoal} loop={true} />
           </div>
         </div>
         </section>}
